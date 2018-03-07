@@ -7,7 +7,6 @@ class Metadata
     
     public function __construct(array $information)
     {
-    
        $this->information = $information;
     }
     
