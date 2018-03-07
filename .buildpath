@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <buildpath>
+<<<<<<< HEAD
 	<buildpathentry kind="src" path="src/Tools"/>
 	<buildpathentry kind="lib" path=".metadata/.mylyn/repositories.xml.zip"/>
+=======
+	<buildpathentry kind="src" path=""/>
+>>>>>>> master
 	<buildpathentry kind="con" path="org.eclipse.php.core.LANGUAGE"/>
 </buildpath>
