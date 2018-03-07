@@ -1,4 +1,4 @@
-#Consolidation Exercise Team 2
+# Consolidation Exercise Team 2
 
 * There will a main directory called "src"
 
