@@ -17,15 +17,6 @@ class Car
     private $registeredCars = [];
     
     public function __construct(){
-        
-        $counter = 0;
-        
-        if(empty($this->registeredCars)){
-            $counter++;
-            $this->registeredCars[] = $counter;
-        }
-        
-        $this->registeredCars[] = count($this->registeredCars) + 1;
     }
     
     /**
