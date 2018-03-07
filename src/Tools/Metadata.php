@@ -1,7 +1,7 @@
 <?php
 namespace feature_metadata;
 
-class metadata
+class Metadata
 {
     private $information;
     
