@@ -93,10 +93,11 @@ class Car
 }
 
 $car = new Car();
+$car->setColor('white');
 $car->setBrand('BMW');
-$array = ['getBrand' => 'brand'];
+$arrayMap = ['getBrand' => 'brand', 'getColor' => 'color'];
 
-$metadata = new Metadata($array);
+$metadata = new Metadata($arrayMap);
 $config = $metadata->getConfiguration();
 $normalizeObject = new Normalize();
 $normalized = $normalizeObject->normalizer($car, $config);
