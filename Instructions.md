@@ -1,6 +1,6 @@
 # Consolidation Exercise Team 2
 
-* There will a main directory called "src"
+* There will be a main directory called "src"
 
 * Inside "src" there will be: 
    - A directory/namepsace called Tools
