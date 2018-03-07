@@ -6,7 +6,6 @@ use Tools\Normalizer;
 
 class Car 
 {
-    
     private $plateNumber;
     private $color;
     private $brand;
