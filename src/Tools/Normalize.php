@@ -14,7 +14,7 @@ class Normalize {
 
         foreach($metadata as $key => $value) {
             $getterToBeCalled = $key;
-            $normalizedArray[$key] = $getterToBeCalled();
+            $normalizedArray[$key] = $object->$getterToBeCalled();
         }
 
         return $normalizedArray;
