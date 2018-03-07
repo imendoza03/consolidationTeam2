@@ -2,7 +2,7 @@
 
 use Tools\Metadata;
 use Tools\Serializer;
-use Tools\Normalizers;
+use Tools\Normalizer;
 
 class Car 
 {
@@ -24,7 +24,7 @@ class Car
             $this->registeredCars[] = $counter;
         }
         
-        $this->registeredCars[] = $counter++;
+        $this->registeredCars[] = count($registeredCars) + 1;
     }
     
     /**
