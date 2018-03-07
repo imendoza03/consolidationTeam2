@@ -14,7 +14,7 @@ class Serializer {
         } else if ($format == 'nativephp'){
             return serialize($associativeArray);
         } else {
-            throw new RuntimeExeption('You provided a wrong format! json or nativephp');
+            throw new \RuntimeException('You provided a wrong format! json or nativephp');
         }
     }
 }
