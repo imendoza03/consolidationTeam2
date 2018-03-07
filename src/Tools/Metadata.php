@@ -1,5 +1,5 @@
 <?php
-namespace feature_metadata;
+namespace Tools;
 
 class Metadata
 {

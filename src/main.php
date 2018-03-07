@@ -1,8 +1,10 @@
 <?php
 
+require_once 'autoloader.php';
+
 use Tools\Metadata;
 use Tools\Serializer;
-use Tools\Normalizer;
+use Tools\Normalize;
 
 class Car 
 {
@@ -23,7 +25,7 @@ class Car
             $this->registeredCars[] = $counter;
         }
         
-        $this->registeredCars[] = count($registeredCars) + 1;
+        $this->registeredCars[] = count($this->registeredCars) + 1;
     }
     
     /**
@@ -100,6 +102,15 @@ class Car
 }
 
 $car = new Car();
+$car->setBrand('BMW');
+$array = ['getBrand' => 'brand'];
 
-$metadata = new Metadata();
-}
+$metadata = new Metadata($array);
+$config = $metadata->getConfiguration();
+$normalizeObject = new Normalize();
+$normalized = $normalizeObject->normalizer($car, $config);
+$serializerObject = new Serializer();
+$serialized = $serializerObject->serializer($normalized, 'json');
+
+var_dump($serialized);
+
